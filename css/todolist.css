@@ -1,0 +1,109 @@
+
+.todo-page-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.todo-page-container > header {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.todolist-header-items {
+  margin-bottom: 5px;
+}
+
+.todolist-main-container {
+  padding-right: 5px;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.todolist-main-container::-webkit-scrollbar {
+  width: 3px;
+  background-color: white; /*스크롤바의 배경 색*/
+}
+
+.todolist-main-container::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb; /*스크롤바의 색*/
+  border-radius: 3px;
+}
+
+.todolist-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  border: 1px solid #dbdbdb;
+  border-width: 1px 0px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.complete-chkboxes {
+  display: none;
+}
+/*+ : 형제*/
+.complete-chkboxes + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/*체크된 체크박스 요소들의 인접한 형제 label 요소의 after*/
+.complete-chkboxes:checked + label::after{
+  content: "";
+  border-radius: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffbb00;
+}
+
+.item-center {
+  flex-grow: 1; /*flexbox 내부의 가운데 요소임. -> 가운데 빈 공간을 모두 채움*/
+  padding: 0px 10px;
+}
+.item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todolist-date {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.todolist-item-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-edit {
+  margin: 0px 4px;
+  font-size: 11px;
+  color: #ffbb00;
+  
+}
+.btn-edit:active {
+  background-color: #ffbb00;
+  color: white;
+}
+
+
+.btn-remove {
+  margin: 0px 4px;
+  font-size: 11px;
+  color: #ff4400;
+}
+.btn-remove:active{
+  background-color: #ff4400;
+  color: white;
+}
