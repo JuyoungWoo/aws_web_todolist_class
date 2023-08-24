@@ -28,7 +28,8 @@ class Routes {
   }
   
   clear() {
-    const pages= document.querySelectorAll(".main-container > div"); //요소의 자식들 중에 div
+    const pages= document.querySelectorAll(".main-container > div"); 
+    //요소의 자식들 중에 div
     //== welcome page, todo page
     pages.forEach(page => {
       page.classList.add("invisible"); //모든 페이지 display none

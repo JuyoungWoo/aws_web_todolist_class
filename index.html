@@ -20,7 +20,6 @@
         <ul class="sidebar-menu-list">
           <li class="menu-items isMenuSelected" onclick="sidebarMenuOnClickHandle(this)">시작하기</li>
           <li class="menu-items" onclick="sidebarMenuOnClickHandle(this)">ToDoList</li>
-          
         </ul>
       </aside>
       
@@ -44,6 +43,7 @@
           </header>
           
           <ul class="todolist-main-container">
+            <!--js로 li 추가(아래는 임시텍스트)-->
             <li class="todolist-items">
               <div class="item-left">
                   <input type="checkbox" id="complete-chkbox${todo.id}" class="complete-chkboxes"  value="${todo.id}" onchange="checkedOnChangeHandle(this);" checked>

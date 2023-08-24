@@ -55,7 +55,7 @@
   font-weight: 700;
 }
 .sidebar-menu-list{
-  border-top: 1px solid #dbdbdb
+  border: 1px solid #dbdbdb
 }
 .menu-items {
   display: flex;

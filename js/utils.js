@@ -11,6 +11,7 @@ class DateUtils {
     const month = this.leftPad(date.getMonth() + 1); //1월을 0으로 반환
     const day = this.leftPad(date.getDate());
     
-    return [year, month, day].join("-");//리스트의 요소를 문자열로 합쳐줄때 ','을 '-'로 바꿔서 반환
+    return [year, month, day].join("-");
+    //리스트의 요소를 문자열로 합쳐줄때 ','을 '-'로 바꿔서 반환
   }
 }
